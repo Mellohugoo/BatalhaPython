@@ -1,1 +1,62 @@
 Projeto_Batalha_Python
+
+objetivo do jogo será
+
+Batalha:
+ - No inicio do jogo o personagem não terá armas e nem armaduras
+ - O personagem irá "conquistando" os armas com o decorrer do jogo
+
+Skills do Personagem:
+- sorte (começa com 10; para cada vitoria ganha 5, cada derrota perde 3)
+- habilidade
+- força
+- constituição
+
+habilidade * força = poder de ataque
+constituição * força = HP
+constituição + sorte = defesa
+habilidade * sorte = MP
+
+O personagem tem o fator sorte (é o fator que vai usar como porcentagem de chance do item droppar)
+O personagem aprende novos movimentos ou ataques
+
+Tipos de Habilidades:
+ - habilidade de enxergar no escuro
+ - habilidade de conseguir andar sem fazer barulho
+ - habilidade de abrir fechaduras
+ - habilidade de Luta (lutas com ou sem armas)
+ - habilidade de Magia
+ - habilidade de furto
+
+
+ Tipos de armas:
+ - Luta corporal
+ - Espadas (armas mais rápidas/fracas e armas mais lentas/fortes)
+ - Armas de fogo
+ - Uso de magia
+
+ Defesa:
+  - Escudos ()
+  - Poder de Magia()
+  -
+
+  Tipos de armadura
+    - Armadura Comum (+ataque e +defesa)
+    - Armaduras/Capas Especiais (Com habilidades que dão resistência a magia, fogo, etc, ou aumento no ganho de pontos de sorte)
+
+Modos de cura
+  - Poder de Magia
+  - Poções
+  - Dormir em uma taberna
+
+
+Inventário:
+- Cinto (Pochete) : Poderá carregar apenas 2 itens // NÃO PODERÁ TROCAR A POCHETE
+- Poderá encontrar novos inventários como:
+- Bag P (limite de itens: 5)
+- Bag M (limite de itens: 10)
+- Bag G (limites de itens: 15)
+
+Dinheiro
+  -Venda e compra de itens
+  -Ganha dinheiro ven
