@@ -1,10 +1,21 @@
 Projeto_Batalha_Python
 
-objetivo do jogo será
+Objetivo do jogo será salvar o reino, e recuperar um objeto poderoso!!!
+
+Objeto Secreto (Será um objeto com poder ilimitado) = Machado punhal shureken
 
 Batalha:
  - No inicio do jogo o personagem não terá armas e nem armaduras
  - O personagem irá "conquistando" os armas com o decorrer do jogo
+
+Personagem:
+Pontos de HP ()
+Pontos de MP ()
+Pontos de DF ()
+Pontos de HAB()
+Pontos de ST()
+Pontos de ATK()
+
 
 Skills do Personagem:
 - sorte (começa com 10; para cada vitoria ganha 5, cada derrota perde 3)
@@ -38,25 +49,32 @@ Tipos de Habilidades:
  Defesa:
   - Escudos ()
   - Poder de Magia()
-  -
 
-  Tipos de armadura
-    - Armadura Comum (+ataque e +defesa)
-    - Armaduras/Capas Especiais (Com habilidades que dão resistência a magia, fogo, etc, ou aumento no ganho de pontos de sorte)
+ Tipos de armadura
+  - Armadura Comum (+ataque e +defesa)
+  - Armaduras/Capas Especiais (Com habilidades que dão resistência a magia, fogo, etc, ou aumento no ganho de pontos de sorte)
 
-Modos de cura
+ Modos de cura
   - Poder de Magia
   - Poções
   - Dormir em uma taberna
+  - Erva medicinais
 
-
-Inventário:
-- Cinto (Pochete) : Poderá carregar apenas 2 itens // NÃO PODERÁ TROCAR A POCHETE
-- Poderá encontrar novos inventários como:
-- Bag P (limite de itens: 5)
-- Bag M (limite de itens: 10)
-- Bag G (limites de itens: 15)
+ Inventário:
+ - Cinto (Pochete) : Poderá carregar apenas 2 itens // NÃO PODERÁ TROCAR A POCHETE
+ - Poderá encontrar novos inventários como:
+ - Bag P (limite de itens: 5)
+ - Bag M (limite de itens: 10)
+ - Bag G (limites de itens: 15)
 
 Dinheiro
   -Venda e compra de itens
-  -Ganha dinheiro ven
+  -Ganha dinheiro ganhando batalhas
+
+  Personagens Inimigos:
+  Pontos de HP ()
+  Pontos de MP ()
+  Pontos de DF ()
+  Pontos de HAB()
+  Pontos de ST ()
+  Pontos de ATK()
