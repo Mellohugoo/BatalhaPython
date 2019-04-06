@@ -1,0 +1,91 @@
+Projeto_Batalha_Python
+
+Objetivo do jogo será salvar o reino, e recuperar um objeto poderoso!!!
+ - Objeto Secreto (Será um objeto com poder ilimitado) = Machado punhal shureken
+
+O jogo será decidido através de Rolagem de Dados
+
+
+Batalha:
+ - No inicio do jogo o personagem não terá armas e nem armaduras
+ - O personagem irá "conquistando" os armas com o decorrer do jogo
+ - A cada batalha ganha o personagem ganha exp. para passar de nivel e desbloquear itens para compra e melhorar Habilidades
+
+Personagem:
+Pontos de HP (25)
+Pontos de MP (10)
+Pontos de DF (15)
+Pontos de HAB (1)
+Pontos de ST (10)
+Pontos de ATK(10)
+
+Personagens Inimigos(Random):
+Pontos de HP ()
+Pontos de MP ()
+Pontos de DF ()
+Pontos de HAB()
+Pontos de ST ()
+Pontos de ATK()
+
+habilidade * força = poder de ataque
+constituição * força = HP
+constituição + sorte = defesa
+habilidade * sorte = MP
+
+Skills do Personagem:
+- sorte (começa com 10; para cada vitoria ganha 5, cada derrota perde 3)
+- habilidade (começará sem habilidades, irá adquirindo ao decorrer das batalhas)
+- força
+- constituição(HP)
+
+O personagem tem o fator sorte (é o fator que vai usar como porcentagem de chance do item droppar)
+O personagem aprende novos movimentos ou ataques
+
+Tipos de Virtudes que poderá desenvolver:
+ - enxergar no escuro
+ - conseguir andar sem fazer barulho
+ - Abrir fechaduras
+ - Luta (Exemplo: Kung Fu, Karate, etc)
+ - Magia
+ - Furto
+
+
+ Tipos de armas:
+ - Luta corporal
+ - Espadas (armas mais rápidas/fracas e armas mais lentas/fortes)
+ - Armas de fogo
+ - Uso de magia
+
+ Defesa:
+  - Escudos ()
+  - Poder de Magia()
+
+ Tipos de armadura
+  - Armadura Comum (+ataque e +defesa)
+  - Armaduras/Capas Especiais (Com habilidades que dão resistência a magia, fogo, etc, ou aumento no ganho de pontos de sorte)
+
+ Modos de cura
+  - Poder de Magia
+  - Poções (P, M ou G)
+  - Dormir em uma taberna
+  - Erva medicinais
+
+ Inventário:
+ - Cinto (Pochete) : Poderá carregar apenas 2 itens // NÃO PODERÁ TROCAR A POCHETE
+ - Poderá encontrar novos inventários como:
+ - Bag P (limite de itens: 5)
+ - Bag M (limite de itens: 10)
+ - Bag G (limites de itens: 15)
+
+Dinheiro
+  -Venda e compra de itens
+  -Ganha dinheiro ganhando batalhas
+
+Lojinha:
+Poção P(20)
+Poção M(50)
+Poção G(100)
+Antídotos(em caso de envenenamento)
+Armas básicas
+Escudos básicos
+Itens de efeitos diversos (+atk, +def, +sorte, etc)

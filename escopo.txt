@@ -1,0 +1,23 @@
+Feature list
+
+class player # responsible for creating the player object and control its behavior
+ - constructor receives -> name, ability, strength, luck, constitution
+self.name
+self.ability
+self.strength
+self.luck = 10
+self.constitution
+
+def calc_attributes
+self.max_hp = self.constitution * self.strength
+self.hp = self.constitution * self.strength
+self.max_mp = self.luck * self.ability
+self.mp = self.luck * self.ability
+self.defence = self.luck + self.constitution
+
+class battle # Will set the battles between the participants, and log it to a file.
+
+The starting folder structure:
+assets/ # Holds all armours, items, magic, weapons
+classes/ # Holds all classes for player, enemy, person, game, battle.
+main.py
