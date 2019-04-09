@@ -1,0 +1,7 @@
+[
+  {"name":"Potion","amount":2,"effect":20,"use":"cure","type": "item"},
+  {"name":"Super Potion","amount":2,"effect":50,"use":"cure","type": "item"},
+  {"name":"Ultra Potion","amount":2,"effect":50,"use":"cure","type": "item"},
+  {"name":"Acid","amount":1,"effect":35,"use":"attack","type": "item"},
+  {"name":"Alchemist Fire","amount":1,"effect":100,"use":"attack","type": "item"}
+]

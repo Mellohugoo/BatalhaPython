@@ -1,0 +1,15 @@
+[
+  {"name":"Unarmed","amount":1,"cost":0,"effect":0,"bonus":0,"type": "weapon"},
+  {"name":"Dagger","amount":1,"cost":2,"effect":2,"bonus":1,"type": "weapon"},
+  {"name":"Stick","amount":1,"cost":2,"effect":1,"bonus":1,"type": "weapon"},
+  {"name":"Club","amount":1,"cost":0,"effect":4,"bonus":2,"type": "weapon"},
+  {"name":"Spear","amount":1,"cost":2,"effect":7,"bonus":2,"type": "weapon"},
+  {"name":"Light Mace","amount":1,"cost":5,"effect":9,"bonus":2,"type": "weapon"},
+  {"name":"Short Sword","amount":1,"cost":10,"effect":12,"bonus":2,"type": "weapon"},
+  {"name":"Long Sword","amount":1,"cost":15,"effect":16,"bonus":-2,"type": "weapon"},
+  {"name":"Large Sword","amount":1,"cost":50,"effect":21,"bonus":2,"type": "weapon"},
+  {"name":"Battle Axe","amount":1,"cost":10,"effect":22,"bonus":-2,"type": "weapon"},
+  {"name":"War Hammer","amount":1,"cost":12,"effect":24,"bonus":-2,"type": "weapon"},
+  {"name":"Bastard Sword","amount":1,"cost":35,"effect":25,"type": "weapon"},
+  {"name":"Scimitar","amount":1,"cost":15,"effect":20,"bonus":2,"type": "weapon"}
+]
