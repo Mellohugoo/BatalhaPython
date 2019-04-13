@@ -16,8 +16,6 @@ player = Person("Jose Oswaldo",*values_for_enemy(easy))
 
 enemy = Person("Brutus",*values_for_enemy(easy))
 
-player.show_attributes()
-enemy.show_attributes()
 battle1 = Battle(player, enemy)
 
 battle1.rounds()
