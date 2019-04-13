@@ -1,3 +1,5 @@
+from classes.utils import Color
+
 class Person:
     def __init__(self, name, forca, hab, constit):
         self.name = name
@@ -20,19 +22,22 @@ class Person:
         self.max_mp = self.ability * (self.luck // 2)
 
     def show_attributes(self):
-        print(f"Nome: {self.name}, forca: {self.strenght}, habilidade: {self.ability}, constituicao: {self.constitution}")
-        print("Estatisticas do Personagem:")
-        print(f"{self.atk} de ataque.")
-        print(f"{self.defesa} de defesa.")
-        print(f"{self.hp} de HP.")
-        print(f"{self.mp} de MP.")
-        print(f"{self.luck} de sorte.")
+        print(f"Nome: {self.name} | Forca: {self.strenght}, Habilidade: {self.ability}, Constituicao: {self.constitution}")
+        print(f"ATK: {self.atk} | DEF: {self.defesa} | LUCK: {self.luck}")
+        bar_total_size = 30
+        hp_bar_life = round((self.hp / self.max_hp) * bar_total_size)
+        hp_bar_dmg = bar_total_size - hp_bar_life
+        bar_hp_total = ("█" * hp_bar_life) + (" " * hp_bar_dmg)
+        bar_mp = "█" * (self.mp // self.max_mp) * bar_total_size
+        print(f"HP: {self.hp}/{self.max_hp} |{Color.GREEN}{bar_hp_total}{Color.ENDC}| MP: {self.mp}/{self.max_mp} |{Color.BLUE}{bar_mp}{Color.ENDC}|")
+        print("")
 
     def take_damage(self, dmg):
         total_damage = dmg - self.defesa
         if total_damage <= 0:
             total_damage = 1
         self.hp -= total_damage
+        return total_damage
 
     def generate_attack(self):
         return self.atk + self.weapon_dmg
@@ -44,7 +49,6 @@ class Person:
         return True
 
     def show_options(self):
-        print("1. Atacar")
-        print("2.Ver Inventário")
+        print(f"{Color.BOLD}1.{Color.ENDC} Atacar    |{Color.BOLD}2.{Color.ENDC} Ver Inventário")
         choice = input("Escolha sua acao: ")
         return choice
