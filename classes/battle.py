@@ -29,7 +29,7 @@ class Battle:
 
             first_fighter.show_attributes()
             second_fighter.show_attributes()
-            print(f"{Color.BOLD}{Color.UNDERLINE}{Color.RED}{current_fighter.name}'s turn{Color.ENDC}")
+            print(f"{Color.BOLD}{Color.UNDERLINE}{Color.RED}{current_fighter.name.upper()}'s TURN{Color.ENDC}")
             action = current_fighter.show_options()
             if action == "1":
                 damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
