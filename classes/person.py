@@ -22,7 +22,8 @@ class Person:
         self.max_mp = self.ability * (self.luck // 2)
 
     def show_attributes(self):
-        print(f"Nome: {self.name} | Forca: {self.strenght}, Habilidade: {self.ability}, Constituicao: {self.constitution}")
+        print(f"NAME: {Color.YELLOW}{self.name}{Color.ENDC}")
+        print(f"STRENGHT: {self.strenght}| ABILITY: {self.ability}| CONSTITUTION: {self.constitution}")
         print(f"ATK: {self.atk} | DEF: {self.defesa} | LUCK: {self.luck}")
         bar_total_size = 30
         hp_bar_life = round((self.hp / self.max_hp) * bar_total_size)
