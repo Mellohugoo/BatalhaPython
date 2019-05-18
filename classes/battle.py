@@ -9,6 +9,7 @@ class Battle:
         self.player2 = None
         self.battleId = battleId
         self.ready = False
+        self.game_running = False
 
     def initiative(self):
         fighters = [self.player1, self.player2]
@@ -31,13 +32,23 @@ class Battle:
 
             first_fighter.show_attributes()
             second_fighter.show_attributes()
-            print(f"{Color.BOLD}{Color.UNDERLINE}{Color.RED}{current_fighter.name.upper()}'s TURN{Color.ENDC}")
-            action = current_fighter.show_options()
-            if action == "1":
-                damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
-                print(f"{enemy_fighter.name} received {damage_received} damage.")
-                sleep(3)
-            if not enemy_fighter.still_alive():
-                print(f"{current_fighter.name} Wins")
-                break
+            #print(f"{Color.BOLD}{Color.UNDERLINE}{Color.RED}{current_fighter.name.upper()}'s TURN{Color.ENDC}")
+            #action = current_fighter.show_options()
+            #if action == "1":
+            #    damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
+            #    print(f"{enemy_fighter.name} received {damage_received} damage.")
+            #    sleep(3)
+            if current_fighter.move not None:
+                action = current_fighter.move
+                if action == "1":
+                    damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
+                    print(f"{enemy_fighter.name} received {damage_received} damage.")
+                    if not enemy_fighter.still_alive():
+                        print(f"{current_fighter.name} Wins")
+                        self.game_running = False
+                        break
             round_number += 1
+            else:
+                print("Waiting for player action")
+                sleep(5)
+

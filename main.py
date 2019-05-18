@@ -24,7 +24,11 @@ n = Network()
 while True:
     #print("Sending data")
     data = n.send(player)
-    #print("Received ", data)
+    print("Received ", data.player1.name)
+    if data.player1.playerId == player.playerId:
+        print("I'm player1")
+    else:
+        print("I'm player2")
     if not data:
         print("Disconnecting")
         break

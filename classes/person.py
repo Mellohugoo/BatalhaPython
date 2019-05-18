@@ -1,4 +1,5 @@
 from classes.utils import Color
+import random
 
 class Person:
     def __init__(self, name, forca, hab, constit):
@@ -12,6 +13,8 @@ class Person:
         self.deaths = 0
         self.wins = 0
         self.calculate_attributes()
+        self.playerId = random.random()
+        self.move = None
 
     def calculate_attributes(self):
         self.atk = self.strenght * self.ability
@@ -32,6 +35,9 @@ class Person:
         bar_mp = "█" * (self.mp // self.max_mp) * bar_total_size
         print(f"HP: {self.hp}/{self.max_hp} |{Color.GREEN}{bar_hp_total}{Color.ENDC}| MP: {self.mp}/{self.max_mp} |{Color.BLUE}{bar_mp}{Color.ENDC}|")
         print("")
+
+    def play(self, move):
+        self.move = move
 
     def take_damage(self, dmg):
         total_damage = dmg - self.defesa
