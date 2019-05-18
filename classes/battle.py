@@ -4,9 +4,10 @@ from time import sleep
 from classes.utils import Color
 
 class Battle:
-    def __init__(self, player1, player2):
-        self.player1 = player1
-        self.player2 = player2
+    def __init__(self, battleId):
+        self.player1 = None
+        self.player2 = None
+        self.battleId = battleId
 
     def initiative(self):
         fighters = [self.player1, self.player2]
