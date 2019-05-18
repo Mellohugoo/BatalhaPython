@@ -8,6 +8,7 @@ class Battle:
         self.player1 = None
         self.player2 = None
         self.battleId = battleId
+        self.ready = False
 
     def initiative(self):
         fighters = [self.player1, self.player2]
