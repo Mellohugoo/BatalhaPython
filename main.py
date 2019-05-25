@@ -24,19 +24,21 @@ n = Network()
 while True:
     #print("Sending data")
     data = n.send(player)
-    print("Received ", data.player1.name)
-    if data.player1.playerId == player.playerId:
-        print("I'm player1")
-    else:
-        print("I'm player2")
-    if not data:
-        print("Disconnecting")
-        break
-    else:
-        if data.ready:
-            data.rounds()
+    print("Received ", data)
+    #if data.player1.playerId == player.playerId:
+    #    print("I'm player1")
+    #else:
+    #    print("I'm player2")
+    #if not data:
+    #    print("Disconnecting")
+    #    break
+    #else:
+    #    if data.ready:
+    #        data.rounds()
 
 
-#battle1 = Battle(player, enemy)
+#battle1 = Battle(0)
+#battle1.player1 = player
+#battle1.player2 = enemy
 
 #battle1.rounds()
