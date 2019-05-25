@@ -26,15 +26,16 @@ while True:
     data = n.send(player)
     print("Received ", data)
     if data.game_running:
+        print("current player: ", data.current_fighter.name)
         if player.playerId == data.current_fighter.playerId:
             print("I'm the current player", data.current_fighter.name)
             player = data.current_fighter
             player.play(player.show_options())
-        else:
-            player = data.enemy_fighter
-            print("Waiting for enemy to make a move")
-    else:
-        pass
+        #else:
+        #    player = data.enemy_fighter
+        #    print("Waiting for enemy to make a move")
+        #    sleep(5)
+        #    continue
 
 
     #    print("I'm player1")
