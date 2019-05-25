@@ -29,14 +29,26 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                             print("Disconnected")
                             break
                         else:
-                            if p == 0:
-                                game.player1 = data
+                            if game.player2 == None:
+                                if p == 0:
+                                    game.player1 = data
+                                    player = data
+                                else:
+                                    game.player2 = data
+                                    player = data
                             else:
-                                game.player2 = data
-                            print("Received: ", data)
+                                # Game started
+                                if not game.game_running:
+                                    game.game_running = True
+                                    game.rounds()
+                                else:
+                                    player.play(data)
+
+                            #print("Received: ", data)
                             print("how many users: ", idCount)
-                            print("Loaded game: ", game)
-                            print("Im the player: ", p)
+                            print("Games running: ", gameId)
+                            #print("Loaded game: ", game)
+                            #print("Im the player: ", p)
                             conn.sendall(pickle.dumps(game))
                             sleep(4)
                     else:
