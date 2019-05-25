@@ -38,7 +38,7 @@ class Battle:
             #    damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
             #    print(f"{enemy_fighter.name} received {damage_received} damage.")
             #    sleep(3)
-            if current_fighter.move not None:
+            if current_fighter.move != None:
                 action = current_fighter.move
                 if action == "1":
                     damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
@@ -47,7 +47,7 @@ class Battle:
                         print(f"{current_fighter.name} Wins")
                         self.game_running = False
                         break
-            round_number += 1
+                round_number += 1
             else:
                 print("Waiting for player action")
                 sleep(5)
