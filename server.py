@@ -42,9 +42,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                                     game.game_running = True
                                     #game.rounds()
                                     game.initiative()
-                                else:
                                     game.control_rounds()
-                                    pass
+                                    game.next_turn()
+                                else:
+                                    if game.current_fighter.move != None:
+                                        game.next_turn()
+                                    game.control_rounds()
 
                             #print("Received: ", data)
                             print("how many users: ", idCount)
