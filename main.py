@@ -30,11 +30,10 @@ while True:
         #if data.player1.playerId == player.playerId:
         if player.playerId == current.playerId:
             player = current
-            player.move(player.show_options())
+            player.play(player.show_options())
         else:
             player = enemy
             print("Waiting for enemy to make a move")
-        data = n.send(player)
     else:
         pass
 
