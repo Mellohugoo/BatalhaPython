@@ -25,7 +25,13 @@ while True:
     #print("Sending data")
     data = n.send(player)
     print("Received ", data)
-    #if data.player1.playerId == player.playerId:
+    if data.game_running:
+        current, enemy = data.show_next_turn(data.rounds)
+        #if data.player1.playerId == player.playerId:
+        if player.playerId == current.playerId:
+            player.move(player.show_options())
+        else:
+            print("Waiting for enemy to make a move")
     #    print("I'm player1")
     #else:
     #    print("I'm player2")
