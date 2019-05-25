@@ -31,7 +31,7 @@ class Battle:
 
         return current_fighter, enemy_fighter
 
-    def rounds(self):
+    #def rounds(self):
         # Control the rounds of the game
         #first_fighter.show_attributes()
         #second_fighter.show_attributes()
@@ -41,16 +41,16 @@ class Battle:
         #    damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
         #    print(f"{enemy_fighter.name} received {damage_received} damage.")
         #    sleep(3)
-        if current_fighter.move != None:
-            action = current_fighter.move
-            if action == "1":
-                damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
-                print(f"{enemy_fighter.name} received {damage_received} damage.")
-                if not enemy_fighter.still_alive():
-                    print(f"{current_fighter.name} Wins")
-                    self.game_running = False
-                    break
-            round_number += 1
-        else:
-            print("Waiting for player action")
-            sleep(5)
+        #if current_fighter.move != None:
+        #    action = current_fighter.move
+        #    if action == "1":
+        #        damage_received = enemy_fighter.take_damage(current_fighter.generate_attack())
+        #        print(f"{enemy_fighter.name} received {damage_received} damage.")
+        #        if not enemy_fighter.still_alive():
+        #            print(f"{current_fighter.name} Wins")
+        #            self.game_running = False
+        #            break
+        #    round_number += 1
+        #else:
+        #    print("Waiting for player action")
+        #    sleep(5)
