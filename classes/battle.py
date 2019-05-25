@@ -31,6 +31,9 @@ class Battle:
 
         return current_fighter, enemy_fighter
 
+    def control_rounds(self):
+        self.rounds += 1
+
     #def rounds(self):
         # Control the rounds of the game
         #first_fighter.show_attributes()

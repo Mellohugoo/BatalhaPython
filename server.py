@@ -32,21 +32,24 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                             if game.player2 == None:
                                 if p == 0:
                                     game.player1 = data
-                                    player = data
+                                    #player = data
                                 else:
                                     game.player2 = data
-                                    player = data
+                                    #player = data
                             else:
                                 # Game started
                                 if not game.game_running:
                                     game.game_running = True
-                                    game.rounds()
+                                    #game.rounds()
+                                    game.initiative()
                                 else:
-                                    player.play(data)
+                                    game.control_rounds()
+                                    pass
 
                             #print("Received: ", data)
                             print("how many users: ", idCount)
                             print("Games running: ", gameId)
+                            print("Rounds on game", gameId," = ",game.rounds)
                             #print("Loaded game: ", game)
                             #print("Im the player: ", p)
                             conn.sendall(pickle.dumps(game))
