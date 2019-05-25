@@ -11,23 +11,23 @@ class Battle:
         self.ready = False
         self.game_running = False
         self.rounds = 0
+        self.first_fighter = None
+        self.second_fighter = None
 
     def initiative(self):
         fighters = [self.player1, self.player2]
-        first = random.choice(fighters)
-        fighters.pop(fighters.index(first))
-        second = fighters[0]
-        return first, second
+        self.first_fighter = random.choice(fighters)
+        fighters.pop(fighters.index(self.first_fighter))
+        self.second_fighter = fighters[0]
 
     def show_next_turn(self, round):
-        first_fighter, second_fighter = self.initiative()
         round_number = round
         if round_number % 2 == 0:
-            current_fighter = second_fighter
-            enemy_fighter = first_fighter
+            current_fighter = self.second_fighter
+            enemy_fighter = self.first_fighter
         else:
-            current_fighter = first_fighter
-            enemy_fighter = second_fighter
+            current_fighter = self.first_fighter
+            enemy_fighter = self.second_fighter
 
         return current_fighter, enemy_fighter
 
