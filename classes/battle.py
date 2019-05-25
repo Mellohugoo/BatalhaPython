@@ -31,7 +31,6 @@ class Battle:
 
         return current_fighter, enemy_fighter
 
-
     def rounds(self):
         # Control the rounds of the game
         #first_fighter.show_attributes()
@@ -55,4 +54,3 @@ class Battle:
         else:
             print("Waiting for player action")
             sleep(5)
-
