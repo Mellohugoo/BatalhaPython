@@ -26,13 +26,12 @@ while True:
     data = n.send(player)
     print("Received ", data)
     if data.game_running:
-        current, enemy = data.show_next_turn(data.rounds)
-        #if data.player1.playerId == player.playerId:
-        if player.playerId == current.playerId:
-            player = current
+        if player.playerId == data.current_fighter.playerId:
+            print("I'm the current player", data.current_fighter.name)
+            player = data.current_fighter
             player.play(player.show_options())
         else:
-            player = enemy
+            player = data.enemy_fighter
             print("Waiting for enemy to make a move")
     else:
         pass
