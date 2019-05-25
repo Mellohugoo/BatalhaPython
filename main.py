@@ -29,9 +29,16 @@ while True:
         current, enemy = data.show_next_turn(data.rounds)
         #if data.player1.playerId == player.playerId:
         if player.playerId == current.playerId:
+            player = current
             player.move(player.show_options())
         else:
+            player = enemy
             print("Waiting for enemy to make a move")
+        data = n.send(player)
+    else:
+        pass
+
+
     #    print("I'm player1")
     #else:
     #    print("I'm player2")
